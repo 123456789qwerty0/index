@@ -1,0 +1,63 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+
+local window = lib:Window('DARKHUB OP')
+
+window:Toggle('doors', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors'))()
+ end)
+ window:Toggle('FE SILENT EXECUTOR', function(enabled)
+    loadstring(game:HttpGet('https://pastebin.com/raw/cmeiMRfS'))()
+ end)
+ window:Toggle('settings', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/settings'))()
+ end)
+ window:Toggle('big paintball op gui ', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/big%20paintball'))()
+ end)
+ window:Toggle('ahh hub', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/ahhh%20hub'))()
+ end)
+ window:Toggle('item gui', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors'))()
+ end)
+ window:Toggle('User icon gui 4 leaderboard',function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/icon'))()
+ end)
+ window:Toggle('FE MODS',function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/fe_mods'))()
+ end)
+ window:Toggle('DOORS MODS', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/gui/doors_mods'))()
+ end)
+ window:Toggle('CHAT SPAMMER GUI (MOVE DARKHUB TO SEE)', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/spammer'))()
+ end)
+ window:Toggle('SYNAPSE X STREAM SNIPER', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/synapse%20x%20stream%20sniper%20script'))()
+ end)
+ window:Toggle('reg stream sniper script', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/DarkHub/main/stream%20sniper%20script%201111111111111111123454321'))()
+ end)
+ window:Toggle('DarkHub 1.0', function(enabled)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/123456789qwerty0/Michael-scripts/main/Darkhub'))()
+ end)
+ window:Toggle('roblox doors figure pov door 50', function(enabled)
+    game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[50].FigureSetup.FigureRagdoll.Head.CFrame end)
+ end)
+ window:Toggle('ROBLOX DOORS FIGURE DOOR 100 POV Script ', function(enabled)
+    game:GetService("RunService").RenderStepped:Connect(function() workspace.CurrentCamera.CFrame = workspace.CurrentRooms[100].FigureSetup.FigureRagdoll.Head.CFrame end)
+ end)
+
+window:Slider('FOV ', {
+    max = 5000000000000000, -- Set the maximum FOV value you want
+    def = 120 -- Set the default FOV value
+}, function(value)
+    local Camera = workspace.CurrentCamera
+    Camera.FieldOfView = value
+end)
+window:Slider('Sonic Speed', {
+    max = 80,
+    def = 20
+}, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
